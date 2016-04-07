@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MetroInfo</string>
+    <string name="aboutapp">О приложении</string>
+    <string name="settings">Настройки</string>
+    <string name="mainpage">Главная</string>
+    <string name="mappage">Карта</string>
+
+</resources>
