@@ -5,4 +5,7 @@
     <string name="mainpage">Главная</string>
     <string name="mappage">Карта</string>
 
+    <string name="open">Open</string>
+    <string name="closed">Closed</string>
+
 </resources>
