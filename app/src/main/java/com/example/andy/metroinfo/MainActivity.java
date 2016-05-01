@@ -1,16 +1,17 @@
 package com.example.andy.metroinfo;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.NavigationView;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
 
-import com.example.andy.metroinfo.adapter.TabsPagerFragmentAdapter;
+import com.example.andy.metroinfo.adapter.TabsAdapter;
 import com.mikepenz.materialdrawer.AccountHeader;
 import com.mikepenz.materialdrawer.AccountHeaderBuilder;
 import com.mikepenz.materialdrawer.Drawer;
@@ -18,6 +19,7 @@ import com.mikepenz.materialdrawer.DrawerBuilder;
 import com.mikepenz.materialdrawer.model.DividerDrawerItem;
 import com.mikepenz.materialdrawer.model.PrimaryDrawerItem;
 import com.mikepenz.materialdrawer.model.SecondaryDrawerItem;
+import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     private ViewPager viewpager;
     private TabLayout tabLayout;
     private DrawerLayout drawerLayout;
-    private Toolbar toolbar;
+    public Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,13 +43,12 @@ public class MainActivity extends AppCompatActivity {
     private void initToolbar() {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
         drawer(toolbar);
     }
 
     private void initTabs() {
         viewpager = (ViewPager) findViewById(R.id.viewPager);
-        TabsPagerFragmentAdapter adapter = new TabsPagerFragmentAdapter(getSupportFragmentManager());
+        TabsAdapter adapter = new TabsAdapter(getApplicationContext(), getSupportFragmentManager());
         viewpager.setAdapter(adapter);
 
         tabLayout = (TabLayout) findViewById(R.id.tablayout);
@@ -62,9 +63,11 @@ public class MainActivity extends AppCompatActivity {
 
         Drawer drawer = new DrawerBuilder()
                 .withActivity(this)
-                .withDisplayBelowStatusBar(true)
+                .withHasStableIds(false)
                 .withToolbar(toolbar)
+                .withScrollToTopAfterClick(true)
                 .withAccountHeader(accountHeader)
+                .withActionBarDrawerToggle(true)
                 .addDrawerItems(
                         new PrimaryDrawerItem()
                                 .withName(R.string.mainpage)
@@ -74,7 +77,18 @@ public class MainActivity extends AppCompatActivity {
                         new PrimaryDrawerItem()
                                 .withName(R.string.mappage)
                                 .withIcon(R.drawable.ic_map_black_24dp)
-                                .withIdentifier(2),
+                                .withIdentifier(2)
+                                .withOnDrawerItemClickListener(new Drawer.OnDrawerItemClickListener() {
+                                    @Override
+                                    public boolean onItemClick(View view, int position, IDrawerItem drawerItem) {
+                                        Intent intent = new Intent(MainActivity.this, Map.class);
+                                        startActivity(intent);
+                                        return false;
+                                    }
+                                })
+                                .withSelectable(false),
+
+
 
                         new DividerDrawerItem(),
 
@@ -89,7 +103,19 @@ public class MainActivity extends AppCompatActivity {
                                 .withIdentifier(4)
                 )
 
+
                 .build();
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                onBackPressed();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 
     @Override
@@ -101,11 +127,9 @@ public class MainActivity extends AppCompatActivity {
     private void initNavigationView() {
         drawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
 
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout,toolbar, R.string.open, R.string.closed);
-        drawerLayout.setDrawerListener(toggle);
-        toggle.syncState();
 
-        //NavigationView navigationView = (NavigationView) findViewById(R.id.navigation_view);
+
+        //NavigationView navigationView = (NavigationView) findViewById(R.id.navigation);
 
 
     }
