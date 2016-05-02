@@ -48,7 +48,24 @@ public class BlueFragment extends DefaultFragment {
     public List<MetroInfoDTO> createData() {
         List<MetroInfoDTO> data = new ArrayList<>();
 
-
+        int i = 209;
+        data.add(new MetroInfoDTO(R.string.heroivdnipra,Integer.toString(i = i+1), R.drawable.shape_blue));
+        data.add(new MetroInfoDTO(R.string.minskaya,Integer.toString(i = i+1), R.drawable.shape_blue));
+        data.add(new MetroInfoDTO(R.string.obolon,Integer.toString(i = i+1), R.drawable.shape_blue));
+        data.add(new MetroInfoDTO(R.string.petrovka,Integer.toString(i = i+1), R.drawable.shape_blue));
+        data.add(new MetroInfoDTO(R.string.tarasshevchenko,Integer.toString(i = i+1), R.drawable.shape_blue));
+        data.add(new MetroInfoDTO(R.string.kontraktovaya,Integer.toString(i = i+1), R.drawable.shape_blue));
+        data.add(new MetroInfoDTO(R.string.poshtovaya,Integer.toString(i = i+1), R.drawable.shape_blue));
+        data.add(new MetroInfoDTO(R.string.maidan,Integer.toString(i = i+1), R.drawable.shape_blue));
+        data.add(new MetroInfoDTO(R.string.ploshadlva,Integer.toString(i = i+1), R.drawable.shape_blue));
+        data.add(new MetroInfoDTO(R.string.olimpiiskaya,Integer.toString(i = i+1), R.drawable.shape_blue));
+        data.add(new MetroInfoDTO(R.string.dvorezukraine,Integer.toString(i = i+1), R.drawable.shape_blue));
+        data.add(new MetroInfoDTO(R.string.lybidskaya,Integer.toString(i = i+1), R.drawable.shape_blue));
+        data.add(new MetroInfoDTO(R.string.demiivskaya,Integer.toString(i = i+1), R.drawable.shape_blue));
+        data.add(new MetroInfoDTO(R.string.goloseevskaya,Integer.toString(i = i+1), R.drawable.shape_blue));
+        data.add(new MetroInfoDTO(R.string.vasilkovskaya,Integer.toString(i = i+1), R.drawable.shape_blue));
+        data.add(new MetroInfoDTO(R.string.vistavochniycentr,Integer.toString(i = i+1), R.drawable.shape_blue));
+        data.add(new MetroInfoDTO(R.string.ipodrom,Integer.toString(i = i+1), R.drawable.shape_blue));
 
         return data;
     }

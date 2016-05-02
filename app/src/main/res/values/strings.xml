@@ -37,7 +37,42 @@
     <string name="darnytsya">Дарница</string>
     <string name="chernigovskaya">Черниговская</string>
     <string name="lesnaya">Лесная</string>
+
+    <string name="heroivdnipra">Героев Днепра</string>
+    <string name="minskaya">Минская</string>
+    <string name="obolon">Оболонь</string>
+    <string name="petrovka">Петровка</string>
+    <string name="tarasshevchenko">Тараса Шевченко</string>
+    <string name="kontraktovaya">Контрактовая Площадь</string>
+    <string name="poshtovaya">Почтовая Площадь</string>
+    <string name="maidan">Площадь Независимости</string>
+    <string name="ploshadlva">Площадь Льва Толстого</string>
+    <string name="olimpiiskaya">Олимпийская</string>
+    <string name="dvorezukraine">Дворец "Украина"</string>
+    <string name="lybidskaya">Лыбидская</string>
+    <string name="demiivskaya">Демеевская</string>
+    <string name="goloseevskaya">Голосеевская</string>
+    <string name="vasilkovskaya">Васильковская</string>
+    <string name="vistavochniycentr">Выставочный центр</string>
+    <string name="ipodrom">Ипордром</string>
     
+    <string name="syrets">Сырец</string>
+    <string name="dorohozhuchi">Дорогожичи</string>
+    <string name="lukianivska">Лукьяновская</string>
+    <string name="zolotivorota">Золотые Ворота</string>
+    <string name="palats_sportu">Дворец спорта</string>
+    <string name="klovska">Кловская</string>
+    <string name="pecherska">Печерская</string>
+    <string name="druzhby_narodiv">Дружбы Народов</string>
+    <string name="vydubychi">Выдубичи</string>
+    <string name="slavutych">Славутич</string>
+    <string name="osokorky">Осокорки</string>
+    <string name="pozniaky">Позняки</string>
+    <string name="kharkivska">Харьковская</string>
+    <string name="vyrlytsia">Вырлица</string>
+    <string name="boryspilska">Бориспольская</string>
+    <string name="chervonyi_khutir">Красный Хутор</string>
+
     
 
 </resources>
