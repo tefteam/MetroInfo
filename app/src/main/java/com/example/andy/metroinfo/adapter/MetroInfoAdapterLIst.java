@@ -22,7 +22,7 @@ import java.util.List;
 public class MetroInfoAdapterLIst extends RecyclerView.Adapter<MetroInfoAdapterLIst.MetroinfoItem>
 {
 
-    private List<MetroInfoDTO> data;
+    public List<MetroInfoDTO> data;
 
     public MetroInfoAdapterLIst(List<MetroInfoDTO> data) {
         this.data = data;
@@ -47,6 +47,7 @@ public class MetroInfoAdapterLIst extends RecyclerView.Adapter<MetroInfoAdapterL
         holder.title.setText(metroInfoDTO.getTitle());
         holder.subtitle.setText(metroInfoDTO.getSubtitle());
         holder.shape.setImageResource(metroInfoDTO.getCircle());
+
     }
 
     public static class MetroinfoItem extends RecyclerView.ViewHolder {
@@ -57,6 +58,7 @@ public class MetroInfoAdapterLIst extends RecyclerView.Adapter<MetroInfoAdapterL
 
 
 
+
         public MetroinfoItem(final View view) {
             super(view);
 
@@ -64,6 +66,7 @@ public class MetroInfoAdapterLIst extends RecyclerView.Adapter<MetroInfoAdapterL
             title = (TextView) itemView.findViewById(R.id.title);
             subtitle = (TextView) itemView.findViewById(R.id.subtitle);
             shape = (ImageView) itemView.findViewById(R.id.shape);
+
 
 
             view.setOnClickListener(new View.OnClickListener() {

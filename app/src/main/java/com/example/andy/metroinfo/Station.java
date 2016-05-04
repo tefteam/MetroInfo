@@ -21,10 +21,35 @@ public class Station extends AppCompatActivity {
         Intent intent = getIntent();
         getSupportActionBar().setTitle(intent.getStringExtra("TITLE"));
 
+
         TextView textView = (TextView) findViewById(R.id.subtitle);
         textView.setText(intent.getStringExtra("SUBTITLE"));
+        int number = Integer.parseInt(intent.getStringExtra("SUBTITLE"));
 
         ImageView photostation = (ImageView) findViewById(R.id.photostation);
+
+        TextView exitleft = (TextView) findViewById(R.id.exitleft);
+        TextView exitright = (TextView) findViewById(R.id.exitright);
+
+        ImageView firstmarket = (ImageView) findViewById(R.id.firstmarket);
+        ImageView secondmarket = (ImageView) findViewById(R.id.secondmarket);
+        ImageView thirdmar = (ImageView) findViewById(R.id.thirdmarket);
+        ImageView fourthmar = (ImageView) findViewById(R.id.fourthmarket);
+        ImageView fifthmar = (ImageView) findViewById(R.id.fifthmarket);
+        ImageView sixmar = (ImageView) findViewById(R.id.sixmarket);
+        ImageView sevenamar = (ImageView) findViewById(R.id.sevenmarket);
+        ImageView eightmar = (ImageView) findViewById(R.id.eightmarket);
+
+        if (number==110)
+        {
+            firstmarket.setImageResource(R.drawable.auchan_logo);
+            secondmarket.setImageResource(R.drawable.silpo_logo);
+
+        } else if (number==111)
+        {
+            firstmarket.setImageResource(R.drawable.silpo_logo);
+            secondmarket.setImageResource(R.drawable.auchan_logo);
+        }
 
 
     }

@@ -9,6 +9,7 @@ public class MetroInfoDTO {
     private String subtitle;
     private int circle;
 
+
     public MetroInfoDTO(int title, String subtitle, int circle) {
         this.title = title;
         this.subtitle = subtitle;
