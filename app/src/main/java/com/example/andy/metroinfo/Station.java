@@ -42,10 +42,10 @@ public class Station extends AppCompatActivity {
 
         if (number==110)
         {
-            firstmarket.setImageResource(R.drawable.auchan_logo);
-            secondmarket.setImageResource(R.drawable.silpo_logo);
+            firstmarket.setImageResource(R.drawable.roshen_logo);
+            secondmarket.setImageResource(R.drawable.ukr_poshta_logo);
 
-        } else if (number==111)
+        } else if (number == 111)
         {
             firstmarket.setImageResource(R.drawable.silpo_logo);
             secondmarket.setImageResource(R.drawable.auchan_logo);
@@ -57,6 +57,23 @@ public class Station extends AppCompatActivity {
         {
             firstmarket.setImageResource(R.drawable.cosmo_market_logo);
             secondmarket.setImageResource(R.drawable.roshen_logo);
+
+        } else if(number == 113)
+        {
+            firstmarket.setImageResource(R.drawable.eva_logo);
+            secondmarket.setImageResource(R.drawable.roshen_logo);
+            thirdmarket.setImageResource(R.drawable.privatbank_logo);
+
+        }else if(number == 114)
+        {
+            firstmarket.setImageResource(R.drawable.fora_logo);
+
+
+        }else if(number == 115)
+        {
+            firstmarket.setImageResource(R.drawable.fora_logo);
+            secondmarket.setImageResource(R.drawable.casta_and_sushi_logo);
+            thirdmarket.setImageResource(R.drawable.cosmo_market_logo);
         }
 
 
