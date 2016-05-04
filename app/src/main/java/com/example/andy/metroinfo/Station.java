@@ -44,6 +44,7 @@ public class Station extends AppCompatActivity {
         {
             firstmarket.setImageResource(R.drawable.auchan_logo);
             secondmarket.setImageResource(R.drawable.silpo_logo);
+            thirdmar.setImageResource(R.drawable.auchan_logo);
 
         } else if (number==111)
         {
