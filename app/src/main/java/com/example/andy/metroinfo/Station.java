@@ -33,23 +33,30 @@ public class Station extends AppCompatActivity {
 
         ImageView firstmarket = (ImageView) findViewById(R.id.firstmarket);
         ImageView secondmarket = (ImageView) findViewById(R.id.secondmarket);
-        ImageView thirdmar = (ImageView) findViewById(R.id.thirdmarket);
-        ImageView fourthmar = (ImageView) findViewById(R.id.fourthmarket);
-        ImageView fifthmar = (ImageView) findViewById(R.id.fifthmarket);
-        ImageView sixmar = (ImageView) findViewById(R.id.sixmarket);
-        ImageView sevenamar = (ImageView) findViewById(R.id.sevenmarket);
-        ImageView eightmar = (ImageView) findViewById(R.id.eightmarket);
+        ImageView thirdmarket = (ImageView) findViewById(R.id.thirdmarket);
+        ImageView fourthmarket = (ImageView) findViewById(R.id.fourthmarket);
+        ImageView fifthmarket = (ImageView) findViewById(R.id.fifthmarket);
+        ImageView sixmarket = (ImageView) findViewById(R.id.sixmarket);
+        ImageView sevenamarket = (ImageView) findViewById(R.id.sevenmarket);
+        ImageView eightmarket = (ImageView) findViewById(R.id.eightmarket);
 
         if (number==110)
         {
             firstmarket.setImageResource(R.drawable.auchan_logo);
             secondmarket.setImageResource(R.drawable.silpo_logo);
-            thirdmar.setImageResource(R.drawable.auchan_logo);
 
         } else if (number==111)
         {
             firstmarket.setImageResource(R.drawable.silpo_logo);
             secondmarket.setImageResource(R.drawable.auchan_logo);
+            thirdmarket.setImageResource(R.drawable.roshen_logo);
+            fourthmarket.setImageResource(R.drawable.porter_pab_logo);
+            fifthmarket.setImageResource(R.drawable.new_mail2_logo);
+
+        }else if(number == 112)
+        {
+            firstmarket.setImageResource(R.drawable.cosmo_market_logo);
+            secondmarket.setImageResource(R.drawable.roshen_logo);
         }
 
 
