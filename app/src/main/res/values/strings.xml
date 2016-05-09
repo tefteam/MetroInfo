@@ -17,7 +17,7 @@
 
     <string name="numberofstation">Номер станции</string>
     <string name="exits">Выходы</string>
-    <string name="hypermarkets">Гипермаркеты</string>
+    <string name="places">Места</string>
 
     <string name="akademgorodok">Академгородок</string>
     <string name="zhitomyrskaya">Житомирская</string>
@@ -72,6 +72,9 @@
     <string name="vyrlytsia">Вырлица</string>
     <string name="boryspilska">Бориспольская</string>
     <string name="chervonyi_khutir">Красный Хутор</string>
+
+    <string name="exit_110_12345678">ул. Академика Ефремова, проспект Академика Палладина</string>
+    <string name="e1">1.</string>
 
     
 
