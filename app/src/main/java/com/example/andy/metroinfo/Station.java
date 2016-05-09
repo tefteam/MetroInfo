@@ -72,6 +72,7 @@ public class Station extends AppCompatActivity {
         RecyclerView.Adapter adapter1 = new PlacesAdapter(dataPlaces);
         recyclerViewPlaces.setAdapter(adapter1);
 
+        photostation.setImageResource(R.drawable.metroexits);
 
 
 

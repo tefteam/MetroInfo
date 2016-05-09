@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
     private void drawer(Toolbar toolbar) {
         AccountHeader accountHeader = new AccountHeaderBuilder()
                 .withActivity(this)
-                .withHeaderBackground(R.drawable.train2)
+                .withHeaderBackground(R.drawable.train)
                 .build();
 
         Drawer drawer = new DrawerBuilder()
