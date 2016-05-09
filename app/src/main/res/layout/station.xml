@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
 
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -67,9 +69,10 @@
 
     </android.support.v7.widget.CardView>
 
-    <android.support.v7.widget.CardView
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         app:cardCornerRadius="5dp"
         app:cardElevation="2dp"
         app:cardUseCompatPadding="true">
@@ -88,267 +91,49 @@
                 android:textSize="20sp"
                 android:textStyle="bold"/>
 
-            <LinearLayout
+            <android.support.v7.widget.RecyclerView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_weight="1"
-                android:gravity="left"
-                android:paddingLeft="16dp">
+                android:id="@+id/recyclerViewExits">
 
-                <ImageView
-                    android:layout_width="wrap_content"
-
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_keyboard_arrow_left_black_24dp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/exitleft"
-                    android:textColor="@color/md_black_1000"
-                    android:textSize="14sp"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingRight="16dp"
-                android:layout_weight="1"
-                android:gravity="right"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_keyboard_arrow_right_black_24dp"/>
-
-                <TextView
-                    android:gravity="right"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/exitright"
-                    android:textColor="@color/md_black_1000"
-                    android:textSize="14sp"/>
-            </LinearLayout>
-                </LinearLayout>
+            </android.support.v7.widget.RecyclerView>
 
         </LinearLayout>
 
     </android.support.v7.widget.CardView>
 
-    <android.support.v7.widget.CardView
-        android:layout_width="match_parent"
+    <android.support.v7.widget.CardView android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         app:cardCornerRadius="5dp"
         app:cardElevation="2dp"
-        app:cardUseCompatPadding="true">
+        app:cardUseCompatPadding="true"
+        xmlns:android="http://schemas.android.com/apk/res/android">
 
-        <LinearLayout
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="16dp"
-            android:orientation="vertical">
+            android:text="@string/places"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/md_blue_800"
+            />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/hypermarkets"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                android:textColor="@color/md_blue_800"
-                />
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recyclerViewPlaces">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="70dp"
-                    android:paddingLeft="16dp"
-                    android:id="@+id/firstmarket"
-                    android:adjustViewBounds="true"
-                    android:layout_height="wrap_content" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="@string/yes"
-                    android:gravity="right|center"
-                    android:paddingRight="16dp"
-                    android:textStyle="bold"
-                    android:textSize="20sp"
-                    />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="70dp"
-                    android:paddingLeft="16dp"
-                    android:id="@+id/secondmarket"                    android:adjustViewBounds="true"
-                    android:layout_height="wrap_content" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="@string/yes"
-                    android:gravity="right|center"
-                    android:paddingRight="16dp"
-                    android:textStyle="bold"
-                    android:textSize="20sp"
-                    />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="70dp"
-                    android:paddingLeft="16dp"
-                    android:id="@+id/thirdmarket"
-                    android:adjustViewBounds="true"
-                    android:layout_height="wrap_content" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="@string/yes"
-                    android:gravity="right|center"
-                    android:paddingRight="16dp"
-                    android:textStyle="bold"
-                    android:textSize="20sp"
-                    />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="70dp"
-                    android:paddingLeft="16dp"
-                    android:id="@+id/fourthmarket"
-                    android:adjustViewBounds="true"
-                    android:layout_height="wrap_content" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="@string/yes"
-                    android:gravity="right|center"
-                    android:paddingRight="16dp"
-                    android:textStyle="bold"
-                    android:textSize="20sp"
-                    />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="70dp"
-                    android:paddingLeft="16dp"
-                    android:id="@+id/fifthmarket"
-                    android:adjustViewBounds="true"
-                    android:layout_height="wrap_content" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="@string/yes"
-                    android:gravity="right|center"
-                    android:paddingRight="16dp"
-                    android:textStyle="bold"
-                    android:textSize="20sp"
-                    />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="70dp"
-                    android:paddingLeft="16dp"
-                    android:id="@+id/sixmarket"
-                    android:adjustViewBounds="true"
-                    android:layout_height="wrap_content" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="@string/yes"
-                    android:gravity="right|center"
-                    android:paddingRight="16dp"
-                    android:textStyle="bold"
-                    android:textSize="20sp"
-                    />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="70dp"
-                    android:paddingLeft="16dp"
-                    android:id="@+id/sevenmarket"
-                    android:adjustViewBounds="true"
-                    android:layout_height="wrap_content" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="@string/yes"
-                    android:gravity="right|center"
-                    android:paddingRight="16dp"
-                    android:textStyle="bold"
-                    android:textSize="20sp"
-                    />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="70dp"
-                    android:paddingLeft="16dp"
-                    android:id="@+id/eightmarket"
-                    android:adjustViewBounds="true"
-                    android:layout_height="wrap_content" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="@string/yes"
-                    android:gravity="right|center"
-                    android:paddingRight="16dp"
-                    android:textStyle="bold"
-                    android:textSize="20sp"
-                    />
-            </LinearLayout>
+        </android.support.v7.widget.RecyclerView>
 
         </LinearLayout>
     </android.support.v7.widget.CardView>
-
 
 </LinearLayout>
 
