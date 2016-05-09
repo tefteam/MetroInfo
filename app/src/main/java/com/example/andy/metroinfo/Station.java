@@ -4,8 +4,19 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
+import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.andy.metroinfo.adapter.ExitsAdapter;
+import com.example.andy.metroinfo.adapter.PlacesAdapter;
+import com.example.andy.metroinfo.dto.ExitDTO;
+import com.example.andy.metroinfo.dto.PlacesDTO;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class Station extends AppCompatActivity {
@@ -28,53 +39,41 @@ public class Station extends AppCompatActivity {
 
         ImageView photostation = (ImageView) findViewById(R.id.photostation);
 
-        TextView exitleft = (TextView) findViewById(R.id.exitleft);
-        TextView exitright = (TextView) findViewById(R.id.exitright);
+        RecyclerView recyclerViewExits = (RecyclerView) findViewById(R.id.recyclerViewExits);
+        RecyclerView recyclerViewPlaces = (RecyclerView) findViewById(R.id.recyclerViewPlaces);
 
-        ImageView firstmarket = (ImageView) findViewById(R.id.firstmarket);
-        ImageView secondmarket = (ImageView) findViewById(R.id.secondmarket);
-        ImageView thirdmarket = (ImageView) findViewById(R.id.thirdmarket);
-        ImageView fourthmarket = (ImageView) findViewById(R.id.fourthmarket);
-        ImageView fifthmarket = (ImageView) findViewById(R.id.fifthmarket);
-        ImageView sixmarket = (ImageView) findViewById(R.id.sixmarket);
-        ImageView sevenamarket = (ImageView) findViewById(R.id.sevenmarket);
-        ImageView eightmarket = (ImageView) findViewById(R.id.eightmarket);
+        recyclerViewExits.setHasFixedSize(true);
+        recyclerViewPlaces.setHasFixedSize(true);
 
-        if (number==110)
-        {
-            firstmarket.setImageResource(R.drawable.roshen_logo);
-            secondmarket.setImageResource(R.drawable.ukr_poshta_logo);
+        RecyclerView.LayoutManager layoutManagerexit = new LinearLayoutManager(this);
+        RecyclerView.LayoutManager layoutManagerplaces = new LinearLayoutManager(this);
 
-        } else if (number == 111)
-        {
-            firstmarket.setImageResource(R.drawable.silpo_logo);
-            secondmarket.setImageResource(R.drawable.auchan_logo);
-            thirdmarket.setImageResource(R.drawable.roshen_logo);
-            fourthmarket.setImageResource(R.drawable.porter_pab_logo);
-            fifthmarket.setImageResource(R.drawable.new_mail2_logo);
-
-        }else if(number == 112)
-        {
-            firstmarket.setImageResource(R.drawable.cosmo_market_logo);
-            secondmarket.setImageResource(R.drawable.roshen_logo);
-
-        } else if(number == 113)
-        {
-            firstmarket.setImageResource(R.drawable.eva_logo);
-            secondmarket.setImageResource(R.drawable.roshen_logo);
-            thirdmarket.setImageResource(R.drawable.privatbank_logo);
-
-        }else if(number == 114)
-        {
-            firstmarket.setImageResource(R.drawable.fora_logo);
+        recyclerViewExits.setLayoutManager(layoutManagerexit);
+        recyclerViewPlaces.setLayoutManager(layoutManagerplaces);
 
 
-        }else if(number == 115)
-        {
-            firstmarket.setImageResource(R.drawable.fora_logo);
-            secondmarket.setImageResource(R.drawable.casta_and_sushi_logo);
-            thirdmarket.setImageResource(R.drawable.cosmo_market_logo);
-        }
+        List<ExitDTO> dataExits = new ArrayList<>();
+        List<PlacesDTO> dataPlaces = new ArrayList<>();
+
+        dataExits.add(new ExitDTO(R.string.e1, R.string.exit_110_12345678));
+        dataExits.add(new ExitDTO(R.string.e1, R.string.exit_110_12345678));
+        dataExits.add(new ExitDTO(R.string.e1, R.string.exit_110_12345678));
+        dataExits.add(new ExitDTO(R.string.e1, R.string.exit_110_12345678));
+
+        dataPlaces.add(new PlacesDTO(R.drawable.auchan_logo, R.string.e1));
+        dataPlaces.add(new PlacesDTO(R.drawable.auchan_logo, R.string.e1));
+        dataPlaces.add(new PlacesDTO(R.drawable.auchan_logo, R.string.e1));
+        dataPlaces.add(new PlacesDTO(R.drawable.auchan_logo, R.string.e1));
+
+
+        RecyclerView.Adapter adapter = new ExitsAdapter(dataExits);
+        recyclerViewExits.setAdapter(adapter);
+
+        RecyclerView.Adapter adapter1 = new PlacesAdapter(dataPlaces);
+        recyclerViewPlaces.setAdapter(adapter1);
+
+
+
 
 
     }
