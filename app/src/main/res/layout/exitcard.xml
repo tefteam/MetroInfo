@@ -30,7 +30,7 @@
                 android:layout_height="match_parent"
                 android:textSize="16sp"
                 android:id="@+id/exit"
-                android:text="@string/exit_110_12345678"
+                android:text="@string/exit_110"
                 android:textColor="@color/md_black_1000"
                 android:paddingLeft="16sp"
                 android:gravity="center_vertical"

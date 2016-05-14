@@ -32,7 +32,7 @@
                     android:paddingRight="25sp"
                     android:textSize="16sp"
                     android:textStyle="bold"
-                    android:text="@string/e1"
+                    android:text="@string/num1dot"
                     android:textAlignment="gravity"
                     android:gravity="right"
                     android:id="@+id/info_exit"
