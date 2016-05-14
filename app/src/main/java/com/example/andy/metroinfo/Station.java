@@ -51,19 +51,22 @@ public class Station extends AppCompatActivity {
         recyclerViewExits.setLayoutManager(layoutManagerexit);
         recyclerViewPlaces.setLayoutManager(layoutManagerplaces);
 
-
         List<ExitDTO> dataExits = new ArrayList<>();
         List<PlacesDTO> dataPlaces = new ArrayList<>();
 
-        dataExits.add(new ExitDTO(R.string.e1, R.string.exit_110_12345678));
-        dataExits.add(new ExitDTO(R.string.e1, R.string.exit_110_12345678));
-        dataExits.add(new ExitDTO(R.string.e1, R.string.exit_110_12345678));
-        dataExits.add(new ExitDTO(R.string.e1, R.string.exit_110_12345678));
+        switch(number)
+        {
+            case 110:
+                photostation.setImageResource(R.drawable.metroexits);
 
-        dataPlaces.add(new PlacesDTO(R.drawable.auchan_logo, R.string.e1));
-        dataPlaces.add(new PlacesDTO(R.drawable.auchan_logo, R.string.e1));
-        dataPlaces.add(new PlacesDTO(R.drawable.auchan_logo, R.string.e1));
-        dataPlaces.add(new PlacesDTO(R.drawable.auchan_logo, R.string.e1));
+                dataExits.add(new ExitDTO(R.string.num1dot, R.string.exit_110));
+
+                dataPlaces.add(new PlacesDTO(R.drawable.auchan_logo, R.string.num1dot));
+                break;
+
+            case 111:
+                break;
+        }
 
 
         RecyclerView.Adapter adapter = new ExitsAdapter(dataExits);
