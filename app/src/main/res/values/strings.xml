@@ -1,9 +1,8 @@
 <resources>
-    <string name="app_name">MetroInfo</string>
-    <string name="aboutapp">О приложении</string>
-    <string name="settings">Настройки</string>
-    <string name="mainpage">Главная</string>
-    <string name="mappage">Карта</string>
+    <string name="app_name" translatable="false">MetroInfo</string>
+    <string name="aboutapp">About Application</string>
+    <string name="mainpage">Main</string>
+    <string name="mappage">Map</string>
 
     <string name="open">Open</string>
     <string name="closed">Closed</string>
@@ -11,18 +10,18 @@
     <string name="yes">+</string>
     <string name="no">-</string>
 
-    <string name="blue">Синяя</string>
-    <string name="green">Зеленая</string>
-    <string name="red">Красная</string>
+    <string name="blue">Blue</string>
+    <string name="green">Green</string>
+    <string name="red">Red</string>
 
-    <string name="numberofstation">Номер станции</string>
-    <string name="exits">Выходы</string>
-    <string name="places">Места</string>
+    <string name="numberofstation">Number of station</string>
+    <string name="exits">Exits</string>
+    <string name="places">Places</string>
 
-    <string name="akademgorodok">Академгородок</string>
-    <string name="zhitomyrskaya">Житомирская</string>
-    <string name="sviatoshon">Святошин</string>
-    <string name="nivki">Нивки</string>
+    <string name="akademgorodok">Akademmistechko</string>
+    <string name="zhitomyrskaya">Zhytomyrska</string>
+    <string name="sviatoshon">Sviatoshyn</string>
+    <string name="nivki">Nyvky</string>
     <string name="berest">Берестейская</string>
     <string name="shylyavska">Шулявская</string>
     <string name="politex">Политехнический институт</string>
