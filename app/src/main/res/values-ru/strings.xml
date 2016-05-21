@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name" translatable="false">MetroInfo</string>
+    <string name="aboutapp">О приложении</string>
+    <string name="mainpage">Главная</string>
+    <string name="mappage">Карта</string>
+
+    <string name="open">Open</string>
+    <string name="closed">Closed</string>
+
+    <string name="yes">+</string>
+    <string name="no">-</string>
+
+    <string name="blue">Синяя</string>
+    <string name="green">Зеленая</string>
+    <string name="red">Красная</string>
+
+    <string name="numberofstation">Номер станции</string>
+    <string name="exits">Выходы</string>
+    <string name="places">Места</string>
+
+    <string name="akademgorodok">Академгородок</string>
+    <string name="zhitomyrskaya">Житомирская</string>
+    <string name="sviatoshon">Святошин</string>
+    <string name="nivki">Нивки</string>
+    <string name="berest">Берестейская</string>
+    <string name="shylyavska">Шулявская</string>
+    <string name="politex">Политехнический институт</string>
+    <string name="vokzal">Вокзальная</string>
+    <string name="university">Университет</string>
+    <string name="teatr">Театральная</string>
+    <string name="krest">Крещатик</string>
+    <string name="arsenalnaya">Арсенальная</string>
+    <string name="dnipro">Днепр</string>
+    <string name="hydropark">Гидропарк</string>
+    <string name="leftbank">Левобережная</string>
+    <string name="darnytsya">Дарница</string>
+    <string name="chernigovskaya">Черниговская</string>
+    <string name="lesnaya">Лесная</string>
+
+    <string name="heroivdnipra">Героев Днепра</string>
+    <string name="minskaya">Минская</string>
+    <string name="obolon">Оболонь</string>
+    <string name="petrovka">Петровка</string>
+    <string name="tarasshevchenko">Тараса Шевченко</string>
+    <string name="kontraktovaya">Контрактовая Площадь</string>
+    <string name="poshtovaya">Почтовая Площадь</string>
+    <string name="maidan">Площадь Независимости</string>
+    <string name="ploshadlva">Площадь Льва Толстого</string>
+    <string name="olimpiiskaya">Олимпийская</string>
+    <string name="dvorezukraine">Дворец "Украина"</string>
+    <string name="lybidskaya">Лыбидская</string>
+    <string name="demiivskaya">Демеевская</string>
+    <string name="goloseevskaya">Голосеевская</string>
+    <string name="vasilkovskaya">Васильковская</string>
+    <string name="vistavochniycentr">Выставочный центр</string>
+    <string name="ipodrom">Ипордром</string>
+    
+    <string name="syrets">Сырец</string>
+    <string name="dorohozhuchi">Дорогожичи</string>
+    <string name="lukianivska">Лукьяновская</string>
+    <string name="zolotivorota">Золотые Ворота</string>
+    <string name="palats_sportu">Дворец спорта</string>
+    <string name="klovska">Кловская</string>
+    <string name="pecherska">Печерская</string>
+    <string name="druzhby_narodiv">Дружбы Народов</string>
+    <string name="vydubychi">Выдубичи</string>
+    <string name="slavutych">Славутич</string>
+    <string name="osokorky">Осокорки</string>
+    <string name="pozniaky">Позняки</string>
+    <string name="kharkivska">Харьковская</string>
+    <string name="vyrlytsia">Вырлица</string>
+    <string name="boryspilska">Бориспольская</string>
+    <string name="chervonyi_khutir">Красный Хутор</string>
+
+    <string name="exit_110">ул. Академика Ефремова, проспект Академика Палладина</string>
+
+    <string name="num1dot">1.</string>
+    <string name="num2dot">2.</string>
+    <string name="num3dot">3.</string>
+    <string name="num4dot">4.</string>
+    <string name="num5dot">5.</string>
+    <string name="num6dot">6.</string>
+    <string name="num7dot">7.</string>
+    <string name="num8dot">8.</string>
+
+    
+
+</resources>
