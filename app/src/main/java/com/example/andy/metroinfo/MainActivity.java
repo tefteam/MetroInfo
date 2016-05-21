@@ -92,18 +92,12 @@ public class MainActivity extends AppCompatActivity {
 
                         new DividerDrawerItem(),
 
-                        new SecondaryDrawerItem()
-                                .withName(R.string.settings)
-                                .withIcon(R.drawable.ic_settings_black_24dp)
-                                .withIdentifier(3),
 
                         new SecondaryDrawerItem()
                                 .withName(R.string.aboutapp)
                                 .withIcon(R.drawable.ic_question_answer_black_24dp)
-                                .withIdentifier(4)
+                                .withIdentifier(3)
                 )
-
-
                 .build();
     }
 
