@@ -47,22 +47,22 @@ public class GreenFragment extends DefaultFragment {
         List<MetroInfoDTO> data = new ArrayList<>();
 
         int i = 309;
-        data.add(new MetroInfoDTO(R.string.syrets,Integer.toString(i = i+1), R.drawable.shape_green));
-        data.add(new MetroInfoDTO(R.string.dorohozhuchi,Integer.toString(i = i+1), R.drawable.shape_green));
-        data.add(new MetroInfoDTO(R.string.lukianivska,Integer.toString(i = i+1), R.drawable.shape_green));
-        data.add(new MetroInfoDTO(R.string.zolotivorota,Integer.toString(i = i+2), R.drawable.shape_green));
-        data.add(new MetroInfoDTO(R.string.palats_sportu,Integer.toString(i = i+1), R.drawable.shape_green));
-        data.add(new MetroInfoDTO(R.string.klovska,Integer.toString(i = i+1), R.drawable.shape_green));
-        data.add(new MetroInfoDTO(R.string.pecherska,Integer.toString(i = i+1), R.drawable.shape_green));
-        data.add(new MetroInfoDTO(R.string.druzhby_narodiv,Integer.toString(i = i+1), R.drawable.shape_green));
-        data.add(new MetroInfoDTO(R.string.vydubychi,Integer.toString(i = i+1), R.drawable.shape_green));
-        data.add(new MetroInfoDTO(R.string.slavutych,Integer.toString(i = i+2), R.drawable.shape_green));
-        data.add(new MetroInfoDTO(R.string.osokorky,Integer.toString(i = i+1), R.drawable.shape_green));
-        data.add(new MetroInfoDTO(R.string.pozniaky,Integer.toString(i = i+1), R.drawable.shape_green));
-        data.add(new MetroInfoDTO(R.string.kharkivska,Integer.toString(i = i+1), R.drawable.shape_green));
-        data.add(new MetroInfoDTO(R.string.vyrlytsia,Integer.toString(i = i+1), R.drawable.shape_green));
-        data.add(new MetroInfoDTO(R.string.boryspilska,Integer.toString(i = i+1), R.drawable.shape_green));
-        data.add(new MetroInfoDTO(R.string.chervonyi_khutir,Integer.toString(i = i+1), R.drawable.shape_green));
+        data.add(new MetroInfoDTO(R.string.s310,Integer.toString(i = i+1), R.drawable.shape_green));
+        data.add(new MetroInfoDTO(R.string.s311,Integer.toString(i = i+1), R.drawable.shape_green));
+        data.add(new MetroInfoDTO(R.string.s312,Integer.toString(i = i+1), R.drawable.shape_green));
+        data.add(new MetroInfoDTO(R.string.s314,Integer.toString(i = i+2), R.drawable.shape_green));
+        data.add(new MetroInfoDTO(R.string.s315,Integer.toString(i = i+1), R.drawable.shape_green));
+        data.add(new MetroInfoDTO(R.string.s316,Integer.toString(i = i+1), R.drawable.shape_green));
+        data.add(new MetroInfoDTO(R.string.s317,Integer.toString(i = i+1), R.drawable.shape_green));
+        data.add(new MetroInfoDTO(R.string.s318,Integer.toString(i = i+1), R.drawable.shape_green));
+        data.add(new MetroInfoDTO(R.string.s319,Integer.toString(i = i+1), R.drawable.shape_green));
+        data.add(new MetroInfoDTO(R.string.s321,Integer.toString(i = i+2), R.drawable.shape_green));
+        data.add(new MetroInfoDTO(R.string.s322,Integer.toString(i = i+1), R.drawable.shape_green));
+        data.add(new MetroInfoDTO(R.string.s323,Integer.toString(i = i+1), R.drawable.shape_green));
+        data.add(new MetroInfoDTO(R.string.s324,Integer.toString(i = i+1), R.drawable.shape_green));
+        data.add(new MetroInfoDTO(R.string.s325,Integer.toString(i = i+1), R.drawable.shape_green));
+        data.add(new MetroInfoDTO(R.string.s326,Integer.toString(i = i+1), R.drawable.shape_green));
+        data.add(new MetroInfoDTO(R.string.s327,Integer.toString(i = i+1), R.drawable.shape_green));
 
 
         return data;

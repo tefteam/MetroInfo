@@ -18,59 +18,59 @@
     <string name="exits">Виходи</string>
     <string name="places">Місця</string>
 
-    <string name="akademgorodok">Академмістечко</string>
-    <string name="zhitomyrskaya">Житомирська</string>
-    <string name="sviatoshon">Святошин</string>
-    <string name="nivki">Нивки</string>
-    <string name="berest">Берестейска</string>
-    <string name="shylyavska">Шулявська</string>
-    <string name="politex">Політехнічний інститут</string>
-    <string name="vokzal">Вокзальна</string>
-    <string name="university">Університет</string>
-    <string name="teatr">Театральна</string>
-    <string name="krest">Хрещатик</string>
-    <string name="arsenalnaya">Арсенальна</string>
-    <string name="dnipro">Дніпро</string>
-    <string name="hydropark">Гідропарк</string>
-    <string name="leftbank">Лівобережна</string>
-    <string name="darnytsya">Дарниця</string>
-    <string name="chernigovskaya">Чернігівська</string>
-    <string name="lesnaya">Лісова</string>
+    <string name="s110">Академмістечко</string>
+    <string name="s111">Житомирська</string>
+    <string name="s112">Святошин</string>
+    <string name="s113">Нивки</string>
+    <string name="s114">Берестейска</string>
+    <string name="s115">Шулявська</string>
+    <string name="s116">Політехнічний інститут</string>
+    <string name="s117">Вокзальна</string>
+    <string name="s118">Університет</string>
+    <string name="s119">Театральна</string>
+    <string name="s120">Хрещатик</string>
+    <string name="s121">Арсенальна</string>
+    <string name="s122">Дніпро</string>
+    <string name="s123">Гідропарк</string>
+    <string name="s124">Лівобережна</string>
+    <string name="s125">Дарниця</string>
+    <string name="s126">Чернігівська</string>
+    <string name="s127">Лісова</string>
 
-    <string name="heroivdnipra">Героїв Дніпра</string>
-    <string name="minskaya">Мінська</string>
-    <string name="obolon">Оболонь</string>
-    <string name="petrovka">Петрівка</string>
-    <string name="tarasshevchenko">Тараса Шевченка</string>
-    <string name="kontraktovaya">Контрактова площа</string>
-    <string name="poshtovaya">Поштова площа</string>
-    <string name="maidan">Майдан Незалежності</string>
-    <string name="ploshadlva">Площа Льва Толстого</string>
-    <string name="olimpiiskaya">Олімпійська</string>
-    <string name="dvorezukraine">Палац "Україна"</string>
-    <string name="lybidskaya">Либідська</string>
-    <string name="demiivskaya">Деміївська</string>
-    <string name="goloseevskaya">Голосіївська</string>
-    <string name="vasilkovskaya">Васильківська</string>
-    <string name="vistavochniycentr">Виставковий центр</string>
-    <string name="ipodrom">Іподром</string>
-    
-    <string name="syrets">Сирець</string>
-    <string name="dorohozhuchi">Дорогожичі</string>
-    <string name="lukianivska">Лук\'янівська</string>
-    <string name="zolotivorota">Золоті ворота</string>
-    <string name="palats_sportu">Палац спорту</string>
-    <string name="klovska">Кловська</string>
-    <string name="pecherska">Печерська</string>
-    <string name="druzhby_narodiv">Дружби народів</string>
-    <string name="vydubychi">Видубичі</string>
-    <string name="slavutych">Славутич</string>
-    <string name="osokorky">Осокорки</string>
-    <string name="pozniaky">Позняки</string>
-    <string name="kharkivska">Харьківська</string>
-    <string name="vyrlytsia">Вирлиця</string>
-    <string name="boryspilska">Бориспільська</string>
-    <string name="chervonyi_khutir">Червоний хутір</string>
+    <string name="s210">Героїв Дніпра</string>
+    <string name="s211">Мінська</string>
+    <string name="s212">Оболонь</string>
+    <string name="s213">Петрівка</string>
+    <string name="s214">Тараса Шевченка</string>
+    <string name="s215">Контрактова площа</string>
+    <string name="s216">Поштова площа</string>
+    <string name="s217">Майдан Незалежності</string>
+    <string name="s218">Площа Льва Толстого</string>
+    <string name="s219">Олімпійська</string>
+    <string name="s220">Палац "Україна"</string>
+    <string name="s221">Либідська</string>
+    <string name="s222">Деміївська</string>
+    <string name="s223">Голосіївська</string>
+    <string name="s224">Васильківська</string>
+    <string name="s225">Виставковий центр</string>
+    <string name="s226">Іподром</string>
+
+    <string name="s310">Сирець</string>
+    <string name="s311">Дорогожичі</string>
+    <string name="s312">Лук\'янівська</string>
+    <string name="s314">Золоті ворота</string>
+    <string name="s315">Палац спорту</string>
+    <string name="s316">Кловська</string>
+    <string name="s317">Печерська</string>
+    <string name="s318">Дружби народів</string>
+    <string name="s319">Видубичі</string>
+    <string name="s321">Славутич</string>
+    <string name="s322">Осокорки</string>
+    <string name="s323">Позняки</string>
+    <string name="s324">Харьківська</string>
+    <string name="s325">Вирлиця</string>
+    <string name="s326">Бориспільська</string>
+    <string name="s327">Червоний хутір</string>
 
     <string name="exit_110">ул. Академика Ефремова, проспект Академика Палладина</string>
 
@@ -82,6 +82,15 @@
     <string name="num6dot">6.</string>
     <string name="num7dot">7.</string>
     <string name="num8dot">8.</string>
+
+    <string name="num1">1</string>
+    <string name="num2">2</string>
+    <string name="num3">3</string>
+    <string name="num4">4</string>
+    <string name="num5">5</string>
+    <string name="num6">6</string>
+    <string name="num7">7</string>
+    <string name="num8">8</string>
 
     
 

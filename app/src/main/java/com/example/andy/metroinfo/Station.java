@@ -34,6 +34,9 @@ public class Station extends AppCompatActivity {
 
 
         TextView textView = (TextView) findViewById(R.id.subtitle);
+        TextView next_station = (TextView) findViewById(R.id.next_station);
+        TextView previous_station = (TextView) findViewById(R.id.previous_station);
+
         textView.setText(intent.getStringExtra("SUBTITLE"));
         int number = Integer.parseInt(intent.getStringExtra("SUBTITLE"));
 
@@ -57,14 +60,56 @@ public class Station extends AppCompatActivity {
         switch(number)
         {
             case 110:
-                photostation.setImageResource(R.drawable.metroexits);
+                photostation.setImageResource(R.drawable.station);
+                next_station.setText(R.string.s111);
 
                 dataExits.add(new ExitDTO(R.string.num1dot, R.string.exit_110));
 
-                dataPlaces.add(new PlacesDTO(R.drawable.auchan_logo, R.string.num1dot));
+                dataPlaces.add(new PlacesDTO(R.drawable.auchan_logo, R.string.num1));
                 break;
 
             case 111:
+                photostation.setImageResource(R.drawable.station);
+                next_station.setText(R.string.s112);
+                previous_station.setText(R.string.s110);
+
+                break;
+
+            case 112:
+                photostation.setImageResource(R.drawable.station);
+                next_station.setText(R.string.s113);
+                previous_station.setText(R.string.s111);
+                break;
+
+            case 113:
+                photostation.setImageResource(R.drawable.station);
+                next_station.setText(R.string.s114);
+                previous_station.setText(R.string.s112);
+                break;
+
+            case 114:
+                photostation.setImageResource(R.drawable.station);
+                next_station.setText(R.string.s115);
+                previous_station.setText(R.string.s113);
+                break;
+
+            case 115:
+                photostation.setImageResource(R.drawable.station);
+                next_station.setText(R.string.s116);
+                previous_station.setText(R.string.s114);
+                break;
+
+
+            case 116:
+                photostation.setImageResource(R.drawable.station);
+                next_station.setText(R.string.s117);
+                previous_station.setText(R.string.s115);
+
+                dataExits.add(new ExitDTO(R.string.num1dot, R.string.exit_116));
+                break;
+
+            case 117:
+                dataExits.add(new ExitDTO(R.string.num1dot, R.string.exit_117));
                 break;
         }
 
@@ -75,7 +120,7 @@ public class Station extends AppCompatActivity {
         RecyclerView.Adapter adapter1 = new PlacesAdapter(dataPlaces);
         recyclerViewPlaces.setAdapter(adapter1);
 
-        photostation.setImageResource(R.drawable.metroexits);
+        photostation.setImageResource(R.drawable.station);
 
 
 
