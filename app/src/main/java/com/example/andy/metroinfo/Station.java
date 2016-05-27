@@ -6,7 +6,6 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -60,7 +59,7 @@ public class Station extends AppCompatActivity {
         switch(number)
         {
             case 110:
-                photostation.setImageResource(R.drawable.station);
+                photostation.setImageResource(R.drawable.station_blue_drawable);
                 next_station.setText(R.string.s111);
 
                 dataExits.add(new ExitDTO(R.string.num1dot, R.string.exit_110));
@@ -69,39 +68,39 @@ public class Station extends AppCompatActivity {
                 break;
 
             case 111:
-                photostation.setImageResource(R.drawable.station);
+                photostation.setImageResource(R.drawable.station_blue_drawable);
                 next_station.setText(R.string.s112);
                 previous_station.setText(R.string.s110);
 
                 break;
 
             case 112:
-                photostation.setImageResource(R.drawable.station);
+                photostation.setImageResource(R.drawable.station_blue_drawable);
                 next_station.setText(R.string.s113);
                 previous_station.setText(R.string.s111);
                 break;
 
             case 113:
-                photostation.setImageResource(R.drawable.station);
+                photostation.setImageResource(R.drawable.station_blue_drawable);
                 next_station.setText(R.string.s114);
                 previous_station.setText(R.string.s112);
                 break;
 
             case 114:
-                photostation.setImageResource(R.drawable.station);
+                photostation.setImageResource(R.drawable.station_blue_drawable);
                 next_station.setText(R.string.s115);
                 previous_station.setText(R.string.s113);
                 break;
 
             case 115:
-                photostation.setImageResource(R.drawable.station);
+                photostation.setImageResource(R.drawable.station_blue_drawable);
                 next_station.setText(R.string.s116);
                 previous_station.setText(R.string.s114);
                 break;
 
 
             case 116:
-                photostation.setImageResource(R.drawable.station);
+                photostation.setImageResource(R.drawable.station_blue_drawable);
                 next_station.setText(R.string.s117);
                 previous_station.setText(R.string.s115);
 
@@ -110,6 +109,29 @@ public class Station extends AppCompatActivity {
 
             case 117:
                 dataExits.add(new ExitDTO(R.string.num1dot, R.string.exit_117));
+                break;
+
+            case 212:
+
+                photostation.setImageResource(R.drawable.station_blue_drawable);
+                next_station.setText(R.string.s213);
+                next_station.setText(R.string.s211);
+
+                dataExits.add(new ExitDTO(R.string.num1dot, R.string.exit_211));
+                dataExits.add(new ExitDTO(R.string.num2dot, R.string.exit_211));
+                dataExits.add(new ExitDTO(R.string.num3dot, R.string.exit_211));
+                dataExits.add(new ExitDTO(R.string.num4dot, R.string.exit_211));
+
+                dataPlaces.add(new PlacesDTO(R.drawable.dream_town, R.string.num1));
+                dataPlaces.add(new PlacesDTO(R.drawable.dream_town, R.string.num2));
+                dataPlaces.add(new PlacesDTO(R.drawable.urksibbank, R.string.num2));
+                dataPlaces.add(new PlacesDTO(R.drawable.privat_bank_bankomat, R.string.num3));
+                dataPlaces.add(new PlacesDTO(R.drawable.skyhall_logo, R.string.num3));
+                dataPlaces.add(new PlacesDTO(R.drawable.logo_velyka_kyshenia, R.string.num3));
+                dataPlaces.add(new PlacesDTO(R.drawable.apteka_low_price, R.string.num3));
+                dataPlaces.add(new PlacesDTO(R.drawable.metropolis, R.string.num4));
+                dataPlaces.add(new PlacesDTO(R.drawable.adidas_logo, R.string.num4));
+                dataPlaces.add(new PlacesDTO(R.drawable.liniakino, R.string.num4));
                 break;
         }
 
@@ -120,7 +142,7 @@ public class Station extends AppCompatActivity {
         RecyclerView.Adapter adapter1 = new PlacesAdapter(dataPlaces);
         recyclerViewPlaces.setAdapter(adapter1);
 
-        photostation.setImageResource(R.drawable.station);
+
 
 
 

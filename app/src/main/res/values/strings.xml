@@ -72,12 +72,22 @@
     <string name="s326">Boryspilska</string>
     <string name="s327">Chervony Khutir</string>
 
-    <string name="exit_110">ул. Академика Ефремова, проспект Академика Палладина</string>
+    <string name="exit_110_1"></string>
+
+    <string name="exit_111_1">Peremohy Avenue, F. Pushynoi Street</string>
+    <string name="exit_111_2">Peremohy Avenue, F. Pushynoi Street</string>
+    <string name="exit_111_3">Semashka Street, F. Pushynoi Street</string>
+    <string name="exit_111_4">Peremohy Avenue</string>
     
+    <string name="exit_112_1"></string>
+
     <string name="exit_116">Peremohy Avenue, Vandy Vasylevskoi Street, Politekhnichna Street</string>
     <string name="exit_117">Central Railway Terminal, Southern Railway Terminal, Suburban Railway Terminal</string>
-    <string name="exit_118">Tarasa Shevhenka Boulevard, St. Volodymyr's Cathedral, Botanical Garden</string>
+    <string name="exit_118">Tarasa Shevhenka Boulevard, St. Volodymyrs Cathedral, Botanical Garden</string>
+
     <string name="exit_210"></string>
+
+    <string name="exit_211">Obolnskyi Avenue, Marshala Tymoshenka Street</string>
 
 
     <string name="num1dot">1.</string>
