@@ -47,8 +47,17 @@ public class Station extends AppCompatActivity {
         recyclerViewExits.setHasFixedSize(true);
         recyclerViewPlaces.setHasFixedSize(true);
 
-        RecyclerView.LayoutManager layoutManagerexit = new LinearLayoutManager(this);
-        RecyclerView.LayoutManager layoutManagerplaces = new LinearLayoutManager(this);
+        RecyclerView.LayoutManager layoutManagerexit = new LinearLayoutManager(this)
+        {
+            public boolean canScrollVertically(){
+                return false;
+            }
+        };
+        RecyclerView.LayoutManager layoutManagerplaces = new LinearLayoutManager(this){
+            public boolean canScrollVertically(){
+                return false;
+            }
+        };
 
         recyclerViewExits.setLayoutManager(layoutManagerexit);
         recyclerViewPlaces.setLayoutManager(layoutManagerplaces);
