@@ -124,12 +124,12 @@ public class Station extends AppCompatActivity {
 
                 photostation.setImageResource(R.drawable.station_blue_drawable);
                 next_station.setText(R.string.s213);
-                next_station.setText(R.string.s211);
+                previous_station.setText(R.string.s211);
 
-                dataExits.add(new ExitDTO(R.string.num1dot, R.string.exit_211));
-                dataExits.add(new ExitDTO(R.string.num2dot, R.string.exit_211));
-                dataExits.add(new ExitDTO(R.string.num3dot, R.string.exit_211));
-                dataExits.add(new ExitDTO(R.string.num4dot, R.string.exit_211));
+                dataExits.add(new ExitDTO(R.string.num1dot, R.string.exit_212_12));
+                dataExits.add(new ExitDTO(R.string.num2dot, R.string.exit_212_12));
+                dataExits.add(new ExitDTO(R.string.num3dot, R.string.exit_212_34));
+                dataExits.add(new ExitDTO(R.string.num4dot, R.string.exit_212_34));
 
                 dataPlaces.add(new PlacesDTO(R.drawable.dream_town, R.string.num1));
                 dataPlaces.add(new PlacesDTO(R.drawable.dream_town, R.string.num2));
